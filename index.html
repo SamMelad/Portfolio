@@ -6,16 +6,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio">
-    <meta name="keywords" content="Portofolio , Samuel , Francis">
+    <meta name="description" content="Portfolio of Samuel Francis, Senior Software Engineer at Vodafone Egypt specializing in Java, Node.js, DevOps, and ELK Stack.">
+    <meta name="keywords" content="Samuel Francis, Senior Software Engineer, Vodafone Egypt, Java, Node.js, DevOps, ELK Stack, Linux, CI/CD">
 
-    <title>Samuel Francis</title>
+    <title>Samuel Francis - Senior Software Engineer</title>
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="CSS/bootstrap.css">
-    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/normalize.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/master.css">
 
     <!-- Font -->
@@ -28,326 +29,397 @@
 
 <body>
     <!-- Start Navbar -->
-    <div class="container" style="display: flex;flex-direction: row ;justify-content: center;">
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand brand" href="#landing">Samuel Francis</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#landing">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portofolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certifications">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactme">Contact Me</a>
-                    </li>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#landing">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">What I Do</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactme">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <!-- End Navbar -->
 
+    <!-- Start Landing / Hero -->
+    <header class="container-fluid head hero" id="landing">
+        <div class="container hero-inner">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-center text-lg-left">
+                    <p class="eyebrow mb-2">
+                        Senior Software Engineer <span class="dot">•</span> Vodafone Egypt
+                    </p>
+                    <h1 class="hero-title">Design. Build. Operate.</h1>
+                    <p class="hero-subtitle mt-3">
+                        Senior Software Engineer at Vodafone Egypt with strong experience designing, developing, and
+                        maintaining Java and Node.js applications in enterprise environments. I also bring hands-on
+                        DevOps and system administration experience to deliver reliable, scalable, and well-monitored
+                        solutions end to end.
+                    </p>
 
-    <!-- Start Landing -->
-    <div class="container-fluid head d-flex flex-row justify-content-center mb-5"
-        style="color: #04788a; flex-wrap: wrap;" id="landing">
-        <div class="col-lg-8 col-md-6 col-sm-7 text-center " style="padding-top:70px;">
-            <h1>Welcome</h1>
-            <h2>I'm Samuel Melad Francis</h2>
-            <h4>Full-Stack Web Developer
-                And <br>Software Engineer</h4>
-            <h5>We Focus on Writing Clean Code and Satisfy Clients</h5>
-            <div>
-                <button type="button" class="btn mt-5 p-2 CV">
-                    Download CV</button>
+                    <div class="hero-tags mt-3">
+                        <span class="tag">Java</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">DevOps</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">ELK Stack</span>
+                    </div>
+
+                    <div class="mt-4 hero-cta">
+                        <a class="btn btn-brand mr-2 mb-2" href="#contactme">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                    <img src="Images/PicsArt_01-05-05.48.56.jpg" class="profile-photo" alt="Samuel Francis">
+                </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-7">
-            <img src="Images/PicsArt_01-05-05.48.56.jpg" class="rounded-circle w-75 pt-4" alt="Profile Picture">
-        </div>
-    </div>
-    <!-- End Landing -->
+    </header>
+    <!-- End Landing / Hero -->
 
     <!-- Start About Section -->
-    <div class="container mb-5" id="about">
-        <div class="section">
-            About
+    <section class="container mb-5 section-block" id="about">
+        <div class="section">About</div>
+
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-briefcase card-icon mr-2"></i>
+                            Current Role
+                        </h5>
+                        <p class="card-text mb-0">
+                            Senior Software Engineer at Vodafone Egypt, delivering enterprise-grade Java and Node.js
+                            services with strong production ownership and operational excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-chart-line card-icon mr-2"></i>
+                            Observability (ELK)
+                        </h5>
+                        <p class="card-text mb-0">
+                            Implementing and managing ELK (Elasticsearch, Logstash, Kibana) for centralized logging,
+                            monitoring, troubleshooting, and performance analysis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-graduation-cap card-icon mr-2"></i>
+                            Education
+                        </h5>
+                        <p class="card-text mb-0">
+                            B.Sc. in Computer Science &amp; Information — Minya University (2022). Graduated with
+                            Excellent with Honors.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="cards" style="display: flex; flex-direction:row;flex-wrap:wrap;justify-content: center;">
-            <div class="card col-lg-4 col-md-7 col-sm-6 shadow-lg p-3 mb-5 bg-white rounded" style="width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title text-center">
-                        <i class="fa fa-solid fa-graduation-cap card-icon pt-1"></i>
-                        Education
-                    </h5>
-                    <p class="card-text">
-                        I hold a Bachelor’s Degree in Computer Science and Information
-                        From Minya University in 2022, And My General Grade is Excellent with Honors.
-                    </p>
-                </div>
-            </div>
-            <div class="card col-lg-4 col-md-7 col-sm-6 shadow-lg p-3 mb-5 bg-white rounded" style="width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title text-center">
-                        <i class="fa fa-solid fa-file-lines card-icon pt-1"></i>
-                        Personal Info
-                    </h5>
-                    <p class="card-text">
-                        I am Samuel Melad Francis, I am 20 years old, I was born in Minya and I currently live in Minya
-                    </p>
-                </div>
-            </div>
-            <div class="card col-lg-4 col-md-7 col-sm-6 shadow-lg p-3 mb-5 bg-white rounded" style="width: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title text-center">
-                        <i class="fa fa-solid fa-briefcase card-icon pt-1"></i>
-                        Work
-                    </h5>
-                    <p class="card-text">
-                        Full Stack Web Developer , <br>
-                        Software Engineer at Google , <br>
-                        Data Analysis at Microsoft
-                    </p>
+
+        <div class="card card-modern shadow-sm mt-2">
+            <div class="card-body">
+                <h5 class="card-title mb-3">
+                    <i class="fa-solid fa-circle-check card-icon mr-2"></i>
+                    What I Focus On
+                </h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled bullets">
+                            <li><span class="bullet-dot"></span> Clean, maintainable code and pragmatic architecture</li>
+                            <li><span class="bullet-dot"></span> Reliable delivery via CI/CD and automation</li>
+                            <li><span class="bullet-dot"></span> Production support for high-availability systems</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled bullets">
+                            <li><span class="bullet-dot"></span> Monitoring-first mindset (logs, alerts, dashboards)</li>
+                            <li><span class="bullet-dot"></span> Linux-based operations &amp; troubleshooting</li>
+                            <li><span class="bullet-dot"></span> Practical solutions that meet business needs</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End About Section -->
 
     <!-- Start Services Section -->
-    <div class="container" id="services">
-        <div class="section">
-            Services
-        </div>
-        <div class="services pt-5">
-            <div class="card" style="max-width: auto;">
-                <div class="row no-gutters">
-                    <div class="col-lg-4 col-md-5">
-                        <img src="Images/frontend.png" style="height: 14rem; width: 100%;" alt="Frontend-Backend">
+    <section class="container section-block" id="services">
+        <div class="section">What I Do</div>
+
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="service-icon"><i class="fa-solid fa-sitemap"></i></div>
+                        <h5 class="card-title mt-3">Enterprise Backend Development</h5>
+                        <p class="card-text mb-0">
+                            Designing and building Java and Node.js services with clean architecture, strong
+                            maintainability, and production-grade reliability.
+                        </p>
                     </div>
-                    <div class="col-lg-8 col-md-7">
-                        <div class="card-body">
-                            <h5 class="card-title">Full-Stack Web Developer(Frontend & Backend)</h5>
-                            <p class="card-text">
-                                Our service is based on the design of front and back web pages, and we have many large
-                                projects.
-                                These large projects are distinguished by their tidy, beautiful design, quick and easy
-                                modification.
-                            </p>
-                            <p class="card-text"><small class="text-muted">Eng: Samuel Melad Francis</small></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h5 class="card-title mt-3">DevOps &amp; System Administration</h5>
+                        <p class="card-text mb-0">
+                            Linux-based operations, CI/CD pipelines, automation, and production support for
+                            high-availability systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h5 class="card-title mt-3">Logging, Monitoring &amp; Troubleshooting</h5>
+                        <p class="card-text mb-0">
+                            Centralized logging and observability with ELK to improve stability, triage faster, and
+                            optimize performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Start Portfolio Section -->
+    <section class="container mt-5 section-block" id="portfolio">
+        <div id="portofolio" class="anchor-fix"></div>
+        <div class="section">Portfolio</div>
+
+        <div class="row mt-4">
+            <div class="col-lg-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <img src="Images/leon template.png" class="card-img-top portfolio-img" alt="Leon Template">
+                    <div class="card-body">
+                        <h5 class="card-title">Leon Template</h5>
+                        <p class="card-text">
+                            Frontend landing page template showcasing clean layout, responsiveness, and modern styling.
+                        </p>
+                        <a href="https://sammelad.github.io/Leon-Template/" target="_blank" rel="noopener"
+                            class="btn btn-brand">
+                            View Live
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <img src="Images/kesper template.PNG" class="card-img-top portfolio-img" alt="Kasper Template">
+                    <div class="card-body">
+                        <h5 class="card-title">Kasper Template</h5>
+                        <p class="card-text">
+                            Single-page HTML template with a focus on layout structure and reusable UI sections.
+                        </p>
+                        <a href="https://sammelad.github.io/HTML_And_CSS_Template_2/" target="_blank" rel="noopener"
+                            class="btn btn-brand">
+                            View Live
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-rocket mr-2 text-accent"></i>
+                            CI/CD &amp; Automation
+                        </h5>
+                        <p class="card-text">
+                            Building repeatable pipelines and automation to reduce release risk, speed up delivery, and
+                            keep production stable.
+                        </p>
+                        <a href="https://github.com/SamMelad/Complete_CI_CD" target="_blank" rel="noopener"
+                            class="btn btn-brand mt-2">
+                            View Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- start Skills Section -->
+    <section class="container our-skills section-block" id="skills">
+        <div class="section">Skills</div>
+
+        <div class="row mt-4">
+            <div class="col-lg-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-code mr-2 card-icon"></i>
+                            Backend &amp; Architecture
+                        </h5>
+                        <div class="skill-badges">
+                            <span class="badge badge-skill">Java</span>
+                            <span class="badge badge-skill">Node.js</span>
+                            <span class="badge badge-skill">REST APIs</span>
+                            <span class="badge badge-skill">Microservices</span>
+                            <span class="badge badge-skill">Clean Code</span>
+                            <span class="badge badge-skill">Performance</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="services" style="margin-top: 20px;">
-                <div class="card mb-3" style="max-width: auto;">
-                    <div class="row no-gutters">
-                        <div class="col-lg-4 col-md-5">
-                            <img src="Images/UIUX.png" style="height: 14rem; width: 100%;" alt="UI-UX">
-                        </div>
-                        <div class="col-lg-8 col-md-7">
-                            <div class="card-body ">
-                                <h5 class="card-title">UI & UX</h5>
-                                <p class="card-text">
-                                    Companies require specialists in this field to establish a business opportunity with
-                                    them...
-                                </p>
-                                <p class="card-text"><small class="text-muted">Eng: Samuel Melad Francis</small></p>
-                            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card card-modern shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-gears mr-2 card-icon"></i>
+                            DevOps &amp; Operations
+                        </h5>
+                        <div class="skill-badges">
+                            <span class="badge badge-skill">Linux</span>
+                            <span class="badge badge-skill">CI/CD</span>
+                            <span class="badge badge-skill">Automation</span>
+                            <span class="badge badge-skill">Production Support</span>
+                            <span class="badge badge-skill">High Availability</span>
                         </div>
                     </div>
                 </div>
-                <div class="services" style="margin-top: 20px;">
-                    <div class="card mb-3" style="max-width: auto;">
-                        <div class="row no-gutters">
-                            <div class="col-lg-4 col-md-5">
-                                <img src="Images/Android Developer.png" style="height: 14rem; width: 100%;"
-                                    alt="UI-UX">
-                            </div>
-                            <div class="col-lg-8 col-md-7 ">
-                                <div class="card-body ">
-                                    <h5 class="card-title">Android Developer</h5>
-                                    <p class="card-text">
-                                        We have Designed many android projects,
-                                        These large projects are distinguished by their tidy, beautiful design, quick
-                                        and easy modification.
-                                    </p>
-                                    <p class="card-text"><small class="text-muted">Eng: Samuel Melad Francis</small></p>
-                                </div>
-                            </div>
+            </div>
+            <div class="col-lg-12 mb-4">
+                <div class="card card-modern shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-chart-line mr-2 card-icon"></i>
+                            Observability &amp; Monitoring
+                        </h5>
+                        <div class="skill-badges">
+                            <span class="badge badge-skill">Elasticsearch</span>
+                            <span class="badge badge-skill">Logstash</span>
+                            <span class="badge badge-skill">Kibana</span>
+                            <span class="badge badge-skill">Centralized Logging</span>
+                            <span class="badge badge-skill">Troubleshooting</span>
+                            <span class="badge badge-skill">Root Cause Analysis</span>
                         </div>
                     </div>
                 </div>
-                <!-- End Services Section -->
+            </div>
+        </div>
 
-                <!-- Start Portfolio Section -->
-                <div class="container mt-5" id="portofolio">
-                    <div class="section">
-                        Portfolio
-                    </div>
-                    <div class="card-group mt-5"
-                        style="display: flex; flex-direction:row; flex-wrap:wrap; justify-content:center;">
-                        <div class="card shadow col-lg-6 col-md-6 p-3 mb-5 bg-white rounded">
-                            <img src="Images/leon template.png" class="card-img-top"
-                                style="width: 100%; height:20rem" alt="Leon-Template">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Leon Template</h5>
-                                <p class="card-text">This Frontend Project is a free PSD template made by Graphberry.
-                                    It comes in a modern, flat design with vibrant colors</p>
-                                <a href="https://sammelad.github.io/Leon-Template/" target="_blank"
-                                    class="btn CV col-sm-3 col-md-6 col-lg-6" style="margin-left:auto;">
-                                    Go Live
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card shadow col-lg-6 col-md-6 p-3 mb-5 bg-white rounded">
-                            <img src="Images/kesper template.png" class="card-img-top"
-                                style="width: 100%; height:20rem" alt="Kesper-Template">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Kesper Template</h5>
-                                <p class="card-text">This Frontend Project is creative one page HTML5 template great for
-                                    portfolio,
-                                    agency or any other web page. Kasper is a great template for freelancers and
-                                    startups</p>
-                                <a href="https://sammelad.github.io/HTML_And_CSS_Template_2/" target="_blank"
-                                    class="btn CV col-sm-3 col-md-6 col-lg-6" style="margin-left:auto;">
-                                    Go Live
-                                </a>
-                            </div>
-                        </div>
+        <div class="skill-icons mt-2">
+            <div class="skill-icon">
+                <i class="fa-brands fa-java"></i>
+                <span>Java</span>
+            </div>
+            <div class="skill-icon">
+                <i class="fa-brands fa-node-js"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="skill-icon">
+                <i class="fa-brands fa-linux"></i>
+                <span>Linux</span>
+            </div>
+            <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
+                <span>ELK</span>
+            </div>
+            <div class="skill-icon">
+                <i class="fa-solid fa-code-branch"></i>
+                <span>CI/CD</span>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Start Contact Section -->
+    <section class="container mt-4 mb-5 section-block" id="contactme">
+        <div class="section">Contact</div>
+
+        <div class="contact-card mt-4">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h5 class="mb-2">Let’s build reliable systems together.</h5>
+                    <p class="mb-2 text-muted">
+                        Reach out for backend development, DevOps automation, or ELK observability work.
+                    </p>
+                    <div class="text-muted small">
+                        <span class="mr-3">
+                            <i class="fa-solid fa-phone mr-1 text-accent"></i>
+                            <a href="tel:+201060121165" class="text-muted">01060121165</a>
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-envelope mr-1 text-accent"></i>
+                            <a href="mailto:samuelmaled32@gmail.com" class="text-muted">samuelmaled32@gmail.com</a>
+                        </span>
                     </div>
                 </div>
-                <!-- End Portofolio Section -->
-
-                <!-- start Skills Section -->
-                <div class="container our-skills">
-                    <div class="section">
-                        Skills
-                    </div>
-                    <div class="skills" style="display:flex;flex-direction:row;flex-wrap:wrap">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="prog-holder">
-                                <h4>Python</h4>
-                                <div class="prog rounded">
-                                    <span style="width: 90%" data-progress="90%"></span>
-                                </div>
-                            </div>
-                            <div class="prog-holder">
-                                <h4>HTML &amp; CSS</h4>
-                                <div class="prog rounded">
-                                    <span style="width: 85%" data-progress="85%"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="prog-holder">
-                                <h4>JavaScript</h4>
-                                <div class="prog rounded">
-                                    <span style="width: 80%" data-progress="80%"></span>
-                                </div>
-                            </div>
-                            <div class="prog-holder">
-                                <h4>Php</h4>
-                                <div class="prog rounded">
-                                    <span style="width: 90%" data-progress="90%"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-icons">
-                        <div class="card" style="width: 4rem;background-color: transparent;border: 0;">
-                            <img src="Images/python-removebg-preview.png" class="card-img-top ic" alt="Python">
-                        </div>
-                        <div class="card"
-                            style="width: 8rem;background-color: transparent;border: 0; margin-left: 8px;">
-                            <img src="Images/php-removebg-preview.png" class="card-img-top ic" alt="Python">
-                        </div>
-                        <div class="card"
-                            style="width: 10rem;background-color: transparent;border: 0;margin-right: 12px;">
-                            <img src="Images/js-removebg-preview.png" class="card-img-top ic" alt="Python">
-                        </div>
-                        <div class="card" style="width: 4rem;background-color: transparent;border: 0;">
-                            <img src="Images/html-removebg-preview.png" class="card-img-top ic" alt="Python">
-                        </div>
-                        <div class="card"
-                            style="width: 10rem;background-color: transparent;border: 0;margin-bottom: 5px;">
-                            <img src="Images/css-removebg-preview.png" class="card-img-top ic" alt="Python">
-                        </div>
-                    </div>
-                </div>
-                <!-- End Skills Section -->
-
-                <!-- Start Certifications Section -->
-                <div class="container" id="certifications">
-                    <div class="section">
-                        Certifications
-                    </div>
-                    <div class="certs mt-3"
-                        style="display: flex;flex-direction:row;flex-wrap:wrap;justify-content: space-around;">
-                        <div class="card col-lg-5 col-md-5 shadow-lg p-3 mb-5 bg-white rounded">
-                            <img src="Images/First_page-0001.jpg" class="card-img-top" alt="Certificate 1">
-                        </div>
-                        <div class="card col-lg-5 col-md-5 shadow-lg p-3 mb-5 bg-white rounded">
-                            <img src="Images/Second_page-0001.jpg" class="card-img-top" alt="Certificate 2">
-                        </div>
-                        <div class="card col-lg-5 col-md-5 shadow-lg p-3 mb-5 bg-white rounded">
-                            <img src="Images/Third_page-0001.jpg" class="card-img-top" alt="Certificate 3">
-                        </div>
-                        <div class="card col-lg-5 col-md-5 shadow-lg p-3 mb-5 bg-white rounded">
-                            <img src="Images/Fourth_page-0001.jpg" class="card-img-top" alt="Certificate 4">
-                        </div>
-                        <div class="card col-lg-5 col-md-5 shadow-lg p-3 mb-5 bg-white rounded">
-                            <img src="Images/Specialization_page-0001.jpg" class="card-img-top"
-                                alt="Certificate Specialization">
-                        </div>
-                    </div>
-                </div>
-                <!-- End Certifications Section -->
-
-
-                <!-- Start Contact Us Section -->
-                <div class="container mt-4 mb-4" id="contactme">
-                    <div class="section">
-                        Contact Me
-                    </div>
+                <div class="col-lg-5 mt-3 mt-lg-0">
                     <div class="contact-us">
-                        <a href="https://github.com/SamMelad" target="_blank">
-                            <i class="fa fa-brands fa-github contact-icon"></i>
+                        <a href="https://github.com/SamMelad" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fa-brands fa-github contact-icon"></i>
                         </a>
-                        <a href="mailto:samuelmaled32@gmail.com" target="_blank">
-                            <i class="fa fa-solid fa-envelope contact-icon"></i>
+                        <a href="tel:+201060121165" aria-label="Phone">
+                            <i class="fa-solid fa-phone contact-icon"></i>
                         </a>
-                        <a href="https://t.me/Samuel_Melad" target="_blank">
-                            <i class="fa fa-solid fa-paper-plane contact-icon"></i>
+                        <a href="mailto:samuelmaled32@gmail.com" aria-label="Email">
+                            <i class="fa-solid fa-envelope contact-icon"></i>
                         </a>
-                        <a href="https://www.facebook.com/sasa.maled" target="_blank">
-                            <i class="fa fa-brands fa-facebook contact-icon"></i>
+                        <a href="https://t.me/Samuel_Melad" target="_blank" rel="noopener" aria-label="Telegram">
+                            <i class="fa-brands fa-telegram contact-icon"></i>
                         </a>
-                        <a href="https://twitter.com/samuelmaled?s=09" target="_blank">
-                            <i class="fa fa-brands fa-twitter contact-icon"></i>
+                        <a href="https://www.facebook.com/sasa.maled" target="_blank" rel="noopener"
+                            aria-label="Facebook">
+                            <i class="fa-brands fa-facebook contact-icon"></i>
+                        </a>
+                        <a href="https://twitter.com/samuelmaled?s=09" target="_blank" rel="noopener" aria-label="X">
+                            <i class="fa-brands fa-twitter contact-icon"></i>
                         </a>
                     </div>
                 </div>
-                <!-- End Contact Us Section -->
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
 
+    <footer class="footer">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="mb-2 mb-md-0">© <span id="year"></span> Samuel Francis</div>
+                <div class="small text-muted">Java • Node.js • DevOps • ELK • Linux • CI/CD</div>
+            </div>
+        </div>
+    </footer>
 
-                <!-- Bootstrap JS -->
-                <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                    crossorigin="anonymous"></script>
-                <script src="js/bootstrap.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="JS/bootstrap.js" crossorigin="anonymous"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
